@@ -1,3 +1,3 @@
 <?php
 
-//include SPIDER_JOB_DIR.'/test.php';
+include SPIDER_JOB_DIR.'/test.php';

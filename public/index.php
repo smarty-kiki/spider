@@ -24,9 +24,14 @@ if_verify(function ($action, $args) {
 
     $data = call_user_func_array($action, $args);
 
-    header('Content-type: application/json');
+    if (is_array($data)) {
 
-    return json($data);
+        header('Content-type: application/json');
+
+        return json($data);
+    }
+
+    return $data;
 });
 
 // init interceptor
