@@ -1,6 +1,6 @@
 <?php
 
-spider_job_get('test', '* * * * *', 'http://127.0.0.1/test', 'json', [
+spider_job_get('demo', '* * * * *', 'http://127.0.0.1/target', 'json', [
     'test' => 'a',
     'test3.a' => 'b',
 ]);
