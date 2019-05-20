@@ -3,6 +3,7 @@
 return [
     'midwares' => [
         'default' => 'local',
+        'spider' => 'local',
     ],
 
     'resources' => [
