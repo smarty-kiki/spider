@@ -19,3 +19,11 @@ command('spider:trigger', '爬虫时间触发', function ()
 {
     spider_trigger();
 });
+
+command('spider:status', '爬虫任务状态', function ()
+{/*{{{*/
+    $tube = command_paramater('tube', 'default');
+    $config_key = command_paramater('config_key', 'default');
+
+    echo queue_status($tube, $config_key);
+});/*}}}*/
