@@ -1,4 +1,4 @@
 #!/bin/bash
 
-php /var/www/spider_frame/public/cli.php migrate:install
-php /var/www/spider_frame/public/cli.php migrate
+ENV=development php /var/www/spider_frame/public/cli.php migrate:install
+ENV=development php /var/www/spider_frame/public/cli.php migrate
